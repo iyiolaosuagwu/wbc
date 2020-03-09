@@ -191,6 +191,9 @@ li {
 	line-height: 10px;
 }
 
+.drop-content {
+	z-index: 100;
+}
 
 
 .col-right {
@@ -223,4 +226,9 @@ h4 {
 
 .hide {
 	display: none;
+}
+
+.item img {
+	height: 400px;
+	width: 100%;
 }
