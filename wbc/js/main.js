@@ -37,4 +37,7 @@ $(document).ready(function(){
         $(".dropdown-content4").toggleClass("show").fadeOut();
     })
 
+
+    $("#featured").owlCarousel();
+
 }); 
