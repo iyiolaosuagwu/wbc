@@ -38,6 +38,25 @@ $(document).ready(function(){
     })
 
 
-    $("#featured").owlCarousel();
+    $("#featured").owlCarousel({
+        loop: true,
+        margin: 15,
+        responsiveClass: true,
+        responsive: {
+            o:{
+                item: 1,
+                nav: true
+            },
+            600:{
+                items: 2,
+                nav: false
+            },
+            1000:{
+                items: 4,
+                nav: true,
+                loop: false
+            }
+        }
+    });
 
 }); 

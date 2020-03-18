@@ -16,7 +16,7 @@ body {
 }
 
 .navbar1 {
-	padding-left: 20px !important;
+	padding-left: 15px !important;
 }
 
 .search-container {
@@ -97,6 +97,7 @@ body {
 .nav2 {
 	padding-left: 250px;
 	letter-spacing: 2px;
+	background-color: #fff;
 }
 
 .nav2-ul li {
