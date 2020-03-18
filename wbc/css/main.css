@@ -7,6 +7,9 @@ body {
 	font-family: 'Philosopher', sans-serif;
 }
 
+h1, h2, h3, h4, h5 {
+	text-transform: uppercase;
+}
 
 #brand {
 	font-size: 30px !important;
@@ -234,17 +237,74 @@ h4 {
 }
 
 /* Carousel section */
-.item img {
-	width: 100% !important;
-	height: 550px !important;
-}
-
 .carousel-content-box {
-	height: 550px;
-	background: green;
+	height: 600px;
 	position: relative;
 	bottom: 20px;
 }
+
+.hero {
+	padding: 0;
+}
+
+.item {
+	height: 600px;
+	width: 100%;
+}
+
+.text-sm {
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+.text-bg {
+	font-size: 70px;
+	letter-spacing: 10px;
+	color: #fff;
+}
+
+.hero-caption {
+	margin-bottom: 50px;
+	padding-top: 160px;
+}
+
+.hero-btn-btn {
+	letter-spacing: 3px !important;
+	padding: 15px 60px !important;
+	background-color: #fff !important;
+	color: #555 !important;
+}
+
+.hero-btn-btn:hover {
+	color: #fff !important;
+	background-color: #555 !important;
+}
+
+
+
+/* Carousel background images */
+.c1 {
+	background-image: url("https://images.unsplash.com/photo-1553474157-5f29a57c167f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+	background-position: center;
+	background-size: cover;
+}
+
+.c2 {
+	background-image: url("https://images.unsplash.com/photo-1553152531-b98a2fc8d3bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+	background-position: center;
+	background-size: cover;
+}
+
+.c3 {
+	background-image: url("https://images.unsplash.com/photo-1551573355-19727699d60a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+
 /*===========================*/
 
 .dropdown:hover {
@@ -312,10 +372,6 @@ h4 {
 	text-decoration: none !important;
 }
 
-.btn-center {
-	margin-left: 40vw;
-	margin-top: 10px;
-}
 
 .btn-general:hover {
 	transition: ease 1s;
@@ -369,6 +425,11 @@ h4 {
 	display: block;
 	transition: ease-in .5s;
 
+}
+
+.bottom:hover .top-content {
+	display: block;
+	overflow-y: scroll;
 }
 
 #semi-footer h4 {
@@ -439,3 +500,42 @@ a {
 }
 
 */
+
+#customNav {
+	position: absolute;
+	top: 870px;
+	left: 10px;
+	right: 10px;
+}
+
+#customNav .owl-prev, #customNav .owl-next {
+	position: absolute;
+	height: 100px;
+	color: inherit;
+	border: none;
+	z-index: 100;
+	background-color: #fff !important;
+}
+
+.owl-prev {
+	left: 0;
+}
+.owl-next {
+	right: 0;
+}
+
+#customNav2 {
+	position: absolute;
+	top: 200px;
+	left: 10px;
+	right: 10px;
+}
+
+#customNav2 .owl-prev, #customNav2 .owl-next {
+	position: absolute !important;
+	height: 100px;
+	color: #fff;
+	border: none;
+	z-index: 200;
+	background-color: inherit;
+}

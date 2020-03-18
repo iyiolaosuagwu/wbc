@@ -19,6 +19,10 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+	
+
+	<!-- Font-Awesome Kit -->
+	<script src="https://kit.fontawesome.com/80d9601ea5.js" crossorigin="anonymous"></script>
 
 </head>
 	<body>
@@ -171,9 +175,39 @@
 
 	    <!-- Hero Carousel -->
 	    <div class="carousel-content-box">
-	    	<div class="container-fluid">
-	    		<h1 style="color: white; margin-top: 250px;" class="text-center">Hero Carousel Container</h1>
-	    		<h3 style="color: red;" class="text-center">(BUILD ME)</h3>
+	    	<div class="owl-theme">
+    			<div class="owl-controls">
+    				<div id="customNav2" class="owl-nav"></div>
+    			</div>
+		    </div>
+	    	<div class="container-fluid hero owl-carousel owl-theme" id="hero">
+	    		<div class="item c1">
+	    			<div class="hero-caption">
+	    				<p class="text-sm text-center">DUBAI HILLS ESTATE</p>
+	    				<p class="text-bg text-center">GOLF PLACE II</p>
+	    			</div>
+	    			<div class="hero-btn text-center">
+	    				<a href="" role="button" class="btn-general hero-btn-btn">VIEW PROPERTY</a>
+	    			</div>
+	    		</div>
+	    		<div class="item c2">
+	    			<div class="hero-caption">
+	    				<p class="text-sm text-center">DUBAI CREK HARBOUR</p>
+	    				<p class="text-bg text-center">CREEK PALACE</p>
+	    			</div>
+	    			<div class="hero-btn text-center">
+	    				<a href="" role="button" class="btn-general hero-btn-btn">VIEW PROPERTY</a>
+	    			</div>
+	    		</div>
+	    		<div class="item c3">
+	    			<div class="hero-caption">
+	    				<p class="text-sm text-center">DOWNTOWN DUBAI</p>
+	    				<p class="text-bg text-center">GRANDE SIGNATURE RESIDENTS</p>
+	    			</div>
+	    			<div class="hero-btn text-center">
+	    				<a href="" role="button" class="btn-general hero-btn-btn">VIEW PROPERTY</a>
+	    			</div>
+	    		</div>
 	    	</div>
 	    </div>
 
@@ -186,10 +220,15 @@
 	    	<h3 class="text-center" style="font-weight: 500; padding: 5px 0;">FEATURED PROPERTIES IN DUBAI</h3>
 		    <div class="container-fluid">
 		    	<div class="row">
+		    		<div class="owl-theme">
+		    			<div class="owl-controls">
+		    				<div id="customNav" class="owl-nav"></div>
+		    			</div>
+		    		</div>
 			    	<div id="featured" class="owl-carousel owl-theme" style="padding: 20px 100px; margin-bottom: 15px;">
 						<div class="content item">
 							<div class="top">
-								<img src="images/road.jpg" class="img-responsive">
+								
 								<div class="top-content">
 										<h5>FEATURES</h5>
 									<ul>
@@ -202,6 +241,7 @@
 										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</l>
 									</ul>
 								</div>
+								<img src="images/road.jpg" class="img-responsive">
 							</div>
 							<div class="bottom">
 								<h3>SURF</h3>
@@ -210,7 +250,7 @@
 						</div>
 						<div class="content item">
 							<div class="top">
-								<img src="images/children.jpg" class="img-responsive">
+								
 								<div class="top-content">
 										<h5>FEATURES</h5>
 									<ul>
@@ -224,6 +264,7 @@
 										<li>qui officia deserunt mollit anim id est laborum.</li>
 									</ul>
 								</div>
+								<img src="images/children.jpg" class="img-responsive">
 							</div>
 							<div class="bottom">
 								<h3>SURF</h3>
@@ -309,7 +350,17 @@
 				</div>
 				
 		    </div>
-		    <a href="" class="btn-general btn-center" role="button">VIEW ALL COMMUNITIES</a>
+		    <div class="text-center" style="position: relative;">
+		    	<a href="" class="btn-general" role="button">VIEW ALL COMMUNITIES</a>
+		    </div>
+		    
+		</div>
+
+
+
+		<!-- Featured Destinations In Dubai -->
+		<div id="destinations">
+			
 		</div>
 
 		<!-- Contact | Semi-Footer -->

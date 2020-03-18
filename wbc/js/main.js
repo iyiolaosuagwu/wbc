@@ -40,23 +40,63 @@ $(document).ready(function(){
 
     $("#featured").owlCarousel({
         loop: true,
-        margin: 15,
+        margin: 10,
+        navContainer: '#customNav',
+        dots: true,
+        navText: [
+        '<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>',
+        '<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>'
+        ],
+        navContainer: '.content-box #customNav',
         responsiveClass: true,
         responsive: {
-            o:{
-                item: 1,
+            0:{
+                items: 1,
                 nav: true
             },
             600:{
                 items: 2,
-                nav: false
+                margin: 5,
+                nav: true
             },
             1000:{
                 items: 4,
                 nav: true,
-                loop: false
+                loop: true
+            }
+        }
+
+    });
+
+    $("#hero").owlCarousel({
+        loop: true,
+        margin: 10,
+        navContainer: '#customNav2',
+        dots: true,
+        navText: [
+        '<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>',
+        '<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>'
+        ],
+        navContainer: '.carousel-content-box #customNav2',
+        responsiveClass: true,
+        responsive: {
+            0:{
+                items: 1,
+                loop: true,
+                nav: true
+            },
+            600:{
+                items: 1,
+                loop: true,
+                nav: true
+            },
+            1000:{
+                items: 1,
+                nav: true,
+                loop: true
             }
         }
     });
+   
 
 }); 
